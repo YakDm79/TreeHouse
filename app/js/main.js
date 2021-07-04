@@ -13,3 +13,12 @@ $(".header__slider").slick({
     return "<button>" + ("0" + (i + 1)).slice(-2) + "</button>"; // <-- new
   },
 });
+
+$(".header__btn").on("click", function () {
+  $(".header__aside").toggleClass("header__aside--active");
+
+  // $(".header__aside").console.log("qwerty");
+});
+$(".header__aside-close").on("click", function () {
+  $(".header__aside").removeClass("header__aside--active");
+});
