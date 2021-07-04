@@ -1,0 +1,55 @@
+.header
+  &__wrapper
+    position: relative
+  &__btn
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    font-family: Forum
+    font-style: normal
+    font-weight: normal
+    font-size: 72px
+    line-height: 79px
+    color: #FFFFFF
+    border: none
+    background-color: transparent
+    cursor: pointer
+    z-index: 5
+  &__slider
+    position: relative
+.slick-dots
+  position: absolute
+  right: 110px
+  top: 50%
+  text-align: center
+  transform: translateY(-50%)
+  button
+    background-color: #fff
+    width: 9px
+    height: 9px
+    border: none
+    border-radius: 50%
+    font-size: 0
+    font-family: Forum
+    font-style: normal
+    font-weight: normal
+  li
+    margin-bottom: 22px
+  li.slick-active
+    // border-bottom: 1px solid #FFFFFF
+    button
+      position: relative
+      background-color: transparent
+      font-size: 24px
+      line-height: 26px
+      color: #fff
+      transform: translateX(-70%)
+      &::after
+        content: ''
+        position: absolute
+        bottom: -17px
+        left: 10px
+        width: 15px
+        height: 1px
+        background-color: #fff
