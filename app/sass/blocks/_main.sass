@@ -1,0 +1,41 @@
+.welcome
+  display: flex
+  align-items: flex-start
+  &__text
+    flex-basis: 38%
+    margin-left: 36px
+    padding-left: 30px
+    margin-right: 88px
+    font-style: normal
+    font-weight: normal
+    font-size: 18px
+    line-height: 128.9%
+    color: rgba(0, 0, 0, 0.5)
+    position: relative
+    &::before
+      content: ''
+      position: absolute
+      top: 128px
+      left: 0
+      background-color: #000
+      width: 1px
+      height: 303px
+  &__text-title
+    text-transform: uppercase
+    font-style: normal
+    font-weight: bold
+    font-size: 24px
+    line-height: 128.9%
+    color: #000000
+  &__image
+    flex-basis: 41%
+    margin-right: 40px
+    margin-top: 53px
+    img
+      width: 100%
+  &__image-two
+    flex-basis: 70%
+    &--one
+      margin-bottom: 38px
+    &--two
+      margin-left: 36px

@@ -1,4 +1,5 @@
 .header
+  margin-bottom: 103px
   &__logo
     position: absolute
     background-color: transparent
@@ -73,13 +74,17 @@
   height: 100vh
   top: 0
   left: -200%
-  padding-right: 10px
+  padding: 10px
   color: #FFFFFF
   background-color: rgba(0, 0, 0, 0.5)
   display: flex
   flex-direction: column
   justify-content: center
   align-items: center
+  font-size: calc(16px + 8 * ((100vw - 320px) / (1920 - 320)))
+  // font-size: 24px
+  line-height: 128.9%
+  overflow-y: auto
   z-index: 6
   transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1)
   &--active
@@ -99,27 +104,28 @@
   &-tel
     font-style: normal
     font-weight: normal
-    font-size: 24px
-    line-height: 128.9%
-    margin-bottom: 61px
+    // margin-bottom: calc((61px / 100vh) * 100)
     color: #fff
   &-title
     font-style: normal
     font-weight: normal
-    font-size: 24px
-    line-height: 128.9%
+    // font-size: 24px
+    // line-height: 128.9%
     text-transform: uppercase
-    margin-bottom: 50px
+    margin: 0
+    padding: 8% 0 6% 0
+    // margin-bottom: 50px
   &-list
     display: flex
     flex-direction: column
     justify-content: space-between
     align-items: center
+    margin: 0
   &-item
     margin: 30px 0
   &-link
     color: #FFF4F4
     font-style: normal
     font-weight: normal
-    font-size: 24px
-    line-height: 128.9%
+    // font-size: 24px
+    // line-height: 128.9%

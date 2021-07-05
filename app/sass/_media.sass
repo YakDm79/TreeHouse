@@ -59,14 +59,65 @@
   //     outline-color: rgba(255, 255, 255, 0)
   //     outline-offset: 15px
   //     text-shadow: 1px 1px 2px #427388
+@media (max-width: 1800px)
+  .welcome
+    &__image-two
+      &--two
+        margin: 0
+@media (max-width: 1380px)
+  .welcome
+    flex-wrap: wrap
+    &__text
+      flex-basis: 34%
+    &__image
+      flex-basis: 50%
+      margin-bottom: 40px
+      text-align: center
+      img
+        width: auto
+    &__image-two
+      display: flex
+      text-align: center
+      margin-left: 15px
+      img
+        width: 65%
+      &--one
+        margin-right: 15px
+      &--two
+        padding-top: 22px
 @media (max-width: 1100px)
   .header__aside
     width: 40%
+@media (max-width: 1030px)
+  .welcome
+    &__text
+      flex-basis: 100%
+      &::before
+        top: 0
+        height: 100%
+    &__image
+      flex-basis: 100%
+      width: 100%
+      margin: 15px auto
+    &__image-two
+      flex-wrap: wrap
+      text-align: center
+      img
+        width: 100%
 @media (max-width: 768px)
   .slick-dots
     right: 35px
   .header__aside
     width: 60%
+  .welcome
+    &__text
+      margin: 0 10px
+      padding-right: 15px
+      font-size: calc(14px + 4 * ((100vw - 320px) / (768 - 320)))
+    &__image-two
+      margin: 0 auto
+      &--one
+        margin: 0
 @media (max-width: 578px)
   .header__aside
     width: 75%
