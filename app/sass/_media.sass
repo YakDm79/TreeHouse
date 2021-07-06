@@ -92,6 +92,7 @@
   .welcome
     &__text
       flex-basis: 100%
+      margin-bottom: 40px
       &::before
         top: 0
         height: 100%
@@ -100,10 +101,23 @@
       width: 100%
       margin: 15px auto
     &__image-two
+      margin: 0 auto
       flex-wrap: wrap
       text-align: center
       img
         width: 100%
+  .boast
+    flex-direction: column
+    &__info
+      order: -1
+      padding-left: 40px
+    &__popup
+      width: 100%
+      margin: 0 auto
+      padding-bottom: 60%
+      &-play
+        width: 10%
+        height: auto
 @media (max-width: 768px)
   .slick-dots
     right: 35px
@@ -115,7 +129,7 @@
       padding-right: 15px
       font-size: calc(14px + 4 * ((100vw - 320px) / (768 - 320)))
     &__image-two
-      margin: 0 auto
+
       &--one
         margin: 0
 @media (max-width: 578px)

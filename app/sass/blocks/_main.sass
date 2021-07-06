@@ -1,6 +1,7 @@
 .welcome
   display: flex
   align-items: flex-start
+  margin-bottom: 100px
   &__text
     flex-basis: 38%
     margin-left: 36px
@@ -39,3 +40,73 @@
       margin-bottom: 38px
     &--two
       margin-left: 36px
+
+.boast
+  display: flex
+  justify-content: space-between
+  align-items: center
+  margin-left: 0
+  margin-right: auto
+  padding-top: 68px
+  position: relative
+  &::before
+    content: ''
+    position: absolute
+    top: 0
+    right: 0
+    background-color: #000
+    height: 1px
+    width: 58.5%
+
+  &__popup
+    position: relative
+    flex: 0 1 70%
+    // background-image: url(../img/popup-bg.jpg)
+    // background-repeat: no-repeat
+    // background-position: top center
+    // background-size: cover
+    // padding: 288px 560px 288px 484px
+    margin-right: 7%
+    padding-bottom: 35%
+  &__popup-play
+    width: 109px
+    height: 109px
+    display: inline-block
+    position: absolute
+    top: 50%
+    left: 50%
+    z-index: 7
+    transform: translate(-50%, -50%)
+  &__popup-bg
+    position: absolute
+    top: 0
+    left: 0
+    // transform: translateY(-30%)
+  &__info
+    flex: 0 1 30%
+    margin-right: 5%
+    text-align: right
+    padding-right: 29px
+    position: relative
+    &::after
+      position: absolute
+      content: ''
+      top: 30%
+      right: 0
+      width: 1px
+      height: 55%
+      background-color: rgba(0, 0, 0, 0.5)
+  &__info-title
+    font-style: normal
+    font-weight: 600
+    font-size: calc(18px + 6 * ((100vw - 320px) / (1920 - 320)))
+    line-height: 128.9%
+    color: #000000
+    margin: 0 0 54px 0
+  &__info-text
+    font-style: normal
+    font-weight: normal
+    font-size: calc(14px + 4 * ((100vw - 320px) / (1920 - 320)))
+    line-height: 128.9%
+    text-transform: lowercase
+    color: rgba(0, 0, 0, 0.5)
