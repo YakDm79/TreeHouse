@@ -111,7 +111,17 @@
     line-height: 128.9%
     text-transform: lowercase
     color: rgba(0, 0, 0, 0.5)
-
+.wedidthat__title
+  padding-bottom: 10px
+  position: relative
+  &::after
+    content: ''
+    position: absolute
+    bottom: 0
+    left: 0
+    height: 1px
+    width: 51%
+    background-color: #000
 .wedidthat__slider
   max-width: 1250px
   margin: 20px auto
@@ -123,24 +133,35 @@
 //   img
 //     width: 367px
 .wedidthat__slide
-  // padding: 40px
+  position: relative
   &-img
     width: 361px
     min-height: 472px
     object-fit: cover
-
-.wedidthat__slider .slick-prev
-  position: absolute
-  top: 50%
-  left: 0
-  transform: translate(-100%, -50%)
-  background-image: url('../img/slider-arrow-left.svg') no-repeat
-  z-index: 7
+  &-text
+    position: absolute
+    bottom: 7%
+    left: 0
+    right: 0
+    color: #fff
+.wedidthat__slider-arrow
+  &-next
+    z-index: 7
+    position: absolute
+    top: 50%
+    right: 0
+    transform: translate(0%, -50%)
+  &-prev
+    z-index: 7
+    position: absolute
+    top: 50%
+    left: 0
+    transform: translate(0%, -50%)
 .wedidthat__slider .slick-slide
   padding-top: 25px
   padding-bottom: 25px
   width: 361px
-  object-fit: cover
+  // object-fit: cover
   margin: 0 50px
 .wedidthat__slider .slick-center
   padding-top: 0
