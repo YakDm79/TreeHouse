@@ -113,7 +113,7 @@
     color: rgba(0, 0, 0, 0.5)
 
 .wedidthat__slider
-  max-width: 1455px
+  max-width: 1250px
   margin: 20px auto
   text-align: center
   padding: 60px 0
@@ -137,10 +137,16 @@
   background-image: url('../img/slider-arrow-left.svg') no-repeat
   z-index: 7
 .wedidthat__slider .slick-slide
-  padding-top: 20px
+  padding-top: 25px
+  padding-bottom: 25px
+  width: 361px
+  object-fit: cover
+  margin: 0 50px
 .wedidthat__slider .slick-center
   padding-top: 0
-.wedidthat__slider .slick-center
+  padding-bottom: 0
+  transition: all 750ms cubic-bezier(0.19, 1, 0.22, 1)
+  transform: scale(1.38)
   &.wedidthat__slide
     &-img
       min-height: 500px
