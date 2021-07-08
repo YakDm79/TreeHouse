@@ -108,6 +108,7 @@
         width: 100%
   .boast
     flex-direction: column
+    margin-bottom: 110px
     &__info
       order: -1
       padding-left: 40px
@@ -118,6 +119,18 @@
       &-play
         width: 10%
         height: auto
+@media (max-width: 992px)
+  .wedidthat__slider
+    max-width: 90%
+  .wedidthat__slider .slick-slide
+    margin: 0 50px
+    padding: 0
+  .wedidthat__slider .slick-center
+    transform: none
+  .wedidthat__slide
+    width: 40vh
+    // &-img
+      // margin: 0 auto
 @media (max-width: 768px)
   .slick-dots
     right: 35px
@@ -132,6 +145,10 @@
 
       &--one
         margin: 0
+  .wedidthat__slide
+    width: 90vh
+    &-img
+      margin: 0 auto
 @media (max-width: 578px)
   .header__aside
     width: 75%

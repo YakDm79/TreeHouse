@@ -32,23 +32,38 @@ $(".wedidthat__slider").slick({
     //   adaptiveHeight: true,
     slidesToShow: 3,
     slidesToScroll: 1,
-    // responsive: [{
-    //         breakpoint: 768,
-    //         settings: {
-    //             arrows: false,
-    //             centerMode: true,
-    //             centerPadding: '40px',
-    //             slidesToShow: 3
-    //         }
-    //     },
-    //     {
-    //         breakpoint: 480,
-    //         settings: {
-    //             arrows: false,
-    //             centerMode: true,
-    //             centerPadding: '40px',
-    //             slidesToShow: 1
-    //         }
-    //     }
-    // ]
+    responsive: [{
+            breakpoint: 992,
+            settings: {
+                arrows: false,
+                centerMode: true,
+                // centerPadding: '40px',
+                slidesToShow: 2,
+                // variableWidth: true
+            }
+        },
+        {
+            breakpoint: 900,
+            settings: {
+                arrows: false,
+                centerMode: true,
+                // centerPadding: '40px',
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                variableWidth: true
+            }
+        },
+        {
+            breakpoint: 768,
+            settings: {
+                arrows: false,
+                centerMode: true,
+                // centerPadding: '40px',
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                variableWidth: true
+            }
+        },
+
+    ]
 });
