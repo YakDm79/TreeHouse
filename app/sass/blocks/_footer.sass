@@ -1,0 +1,56 @@
+.footer
+  padding-top: 100px
+  background-color: #000
+  &__inner
+    width: 100%
+    margin: 0 auto
+    text-align: center
+  &__title
+    font-family: Forum
+    font-style: normal
+    font-weight: normal
+    font-size: calc(48px + 48 * ((100vw - 320px) / (1920 - 320)))
+    line-height: 106px
+    color: #FFFFFF
+    margin: 0
+  &__contacs
+    display: inline-block
+    font-style: normal
+    font-weight: normal
+    font-size: 18px
+    line-height: 128.9%
+    color: #FFFFFF
+    padding-top: 10px
+    margin-bottom: 34px
+    &-tel
+      color: #FFFFFF
+      text-decoration: none
+      display: inline-block
+      line-height: 1
+      text-decoration: none
+      cursor: pointer
+      position: relative
+      &::after
+        display: block
+        content: ""
+        height: 1px
+        width: 0%
+        left: 50%
+        position: absolute
+        background-color: #fff
+        -webkit-transition: width .3s ease-in-out
+        -moz--transition: width .3s ease-in-out
+        transition: width .3s ease-in-out
+        -webkit-transform: translateX(-50%)
+        -moz-transform: translateX(-50%)
+        transform: translateX(-50%)
+        margin-top: 3px
+      &:hover::after, &:focus::after
+        width: 100%
+  &__social
+    padding-bottom: 140px
+    &-link
+    img
+      margin: 0 11px
+      &:hover
+        transform: scale(1.2)
