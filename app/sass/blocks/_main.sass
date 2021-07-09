@@ -344,3 +344,36 @@
       font-size: 14px
       line-height: 137%
       color: rgba(0, 0, 0, 0.75)
+.partners
+  padding-top: 140px
+  &__title
+    position: relative
+    font-style: normal
+    font-weight: 500
+    font-size: calc(18px + 6 * ((100vw - 320px) / (1920 - 320)))
+    line-height: 128.9%
+    color: #000000
+    text-align: right
+    padding: 0px 46px 10px 0
+    margin-bottom: 80px
+    &::after
+      content: ''
+      position: absolute
+      bottom: 0
+      right: 0
+      height: 1px
+      width: 51%
+      background-color: #000
+  &__inner
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-wrap: wrap
+    width: 100%
+    margin: 0 auto
+  &__image
+    width: 150px
+    margin-right: 94px
+    opacity: 0.5
+    &:hover
+      opacity: 1
