@@ -67,3 +67,32 @@ $(".wedidthat__slider").slick({
 
     ]
 });
+$('.reviews__slider').slick({
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    infinite: false,
+    prevArrow: '<img class="reviews-arrow-prev" src="img/reviews-arrow-prev.svg" alt=""></img',
+    nextArrow: '<img class="reviews-arrow-next" src="img/reviews-arrow-next.svg" alt=""></img',
+    responsive: [{
+            breakpoint: 992,
+            settings: {
+                arrows: false,
+                slidesToShow: 3,
+            }
+        },
+        {
+            breakpoint: 768,
+            settings: {
+                arrows: false,
+                slidesToShow: 2,
+            }
+        },
+        {
+            breakpoint: 578,
+            settings: {
+                arrows: false,
+                slidesToShow: 1,
+            }
+        },
+    ]
+});
