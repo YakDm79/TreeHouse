@@ -127,7 +127,6 @@
   text-align: center
   padding: 60px 0
 .wedidthat__slide
-  background-color: linear-gradient(360deg, rgba(0, 0, 0, 0.5) 18.75%, rgba(0, 0, 0, 0) 100%)
   position: relative
   &-img
     width: 361px
@@ -165,3 +164,106 @@
   &.wedidthat__slide
     &-img
       min-height: 500px
+
+.howtobuy
+  &__title
+    position: relative
+    font-style: normal
+    font-weight: 500
+    font-size: calc(18px + 6 * ((100vw - 320px) / (1920 - 320)))
+    line-height: 128.9%
+    color: #000000
+    text-align: right
+    padding: 100px 50px 10px 0
+    &::after
+      content: ''
+      position: absolute
+      bottom: 0
+      right: 0
+      height: 1px
+      width: 51%
+      background-color: #000
+  &__content
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding-top: 83px
+  &__map
+    flex: 0 1 57%
+    position: relative
+  &__map-marker
+    z-index: 7
+    cursor: pointer
+    position: absolute
+    width: 32px
+    height: 32px
+    border: 1px solid #FFFFFF
+    border-radius: 50px
+    color: rgba(#000, 0)
+    &--01
+      left: 26%
+      top: 40%
+    &--02
+      top: 64%
+      left: 52%
+    &--03
+      top: 10%
+      left: 66%
+    &--04
+      top: 60%
+      left: 87%
+    &--01, &--02, &--03, &--04
+      &:hover
+        span
+          border-radius: 50%
+          padding: 4px
+          text-align: center
+          display: inline-block
+          margin-left: 4px
+          margin-top: 3px
+          font-family: Forum
+          font-style: normal
+          font-weight: normal
+          font-size: 14px
+          background-color: #fff
+          color: #000
+  &__info
+    flex: 0 1 39%
+    display: flex
+    justify-content: space-between
+    align-items: center
+    flex-wrap: wrap
+    background-color: rgba(16, 23, 17, 0.35)
+    padding: 65px 60px
+    span
+      display: inline-block
+    &-number
+      font-family: Forum
+      font-style: normal
+      font-weight: normal
+      font-size: calc(24px + 12 * ((100vw - 320px) / (1920 - 320)))
+      line-height: 128.9%
+      color: #000000
+      margin-right: 24px
+    &-text
+      font-style: normal
+      font-weight: 300
+      font-size: calc(14px + 4 * ((100vw - 320px) / (1920 - 320)))
+      line-height: 125.9%
+      color: #000000
+      position: relative
+      padding-bottom: 12px
+      &::after
+        position: absolute
+        content: ''
+        bottom: 0
+        left: 0
+        height: 1px
+        width: 80%
+        background-color: #000
+  &__item
+    flex-basis: 50%
+    display: flex
+    align-items: center
+    &--01, &--02
+      margin-bottom: 50px

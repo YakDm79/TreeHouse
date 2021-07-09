@@ -129,8 +129,11 @@
     transform: none
   .wedidthat__slide
     width: 40vh
-    // &-img
-      // margin: 0 auto
+  .howtobuy
+    &__content
+      flex-direction: column
+    &__title
+      padding-top: 10%
 @media (max-width: 768px)
   .slick-dots
     right: 35px
@@ -145,10 +148,16 @@
 
       &--one
         margin: 0
+  .wedidthat__slider
+    margin-bottom: 0
   .wedidthat__slide
     width: 90vh
     &-img
       margin: 0 auto
+  .howtobuy
+    &__title
+      &::after
+        width: 65%
 @media (max-width: 578px)
   .header__aside
     width: 75%
@@ -162,8 +171,22 @@
     padding-left: 0
     li
       margin: 0 20px
+  .wedidthat__slider
+    padding-bottom: 0
+  .howtobuy
+    &__info
+      padding: 15px
+    &__title
+      padding-top: 0
+      &::after
+        width: 75%
 @media (max-width: 399px)
   .header__aside
     width: 100%
   .header__btn
     font-size: 52px
+  .howtobuy
+    &__title
+      padding-right: 6px
+      &::after
+        width: 97%
